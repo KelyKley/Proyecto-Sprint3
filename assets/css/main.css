@@ -1,0 +1,361 @@
+/*
+Colors: 
+#E54E79;
+#E56385;
+#00B2A9;
+#75726C;
+#EDE9E2
+*/
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+nav{
+	background-color: black;
+	/*z-index: 4;
+	position: fixed;*/
+}
+.brand-logo img{
+	width: 190px;
+	height: 30px;
+	margin-top: 10px;
+}
+.principal{
+	height: 100vh;
+	background-image: url("../img/fondoo.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.principal .caja-blanca{
+	background: transparent;
+	position: absolute;
+	right: 0;
+	top: 16%;
+	box-sizing: border-box;
+	padding: 40px 60px 50px 40px;
+}
+
+.principal .caja-blanca h2{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fb0f01;
+	font-size: 1.8em;
+}
+
+.principal .caja-blanca h3{
+	text-transform: uppercase;
+	font-weight: 300;
+	color: white;
+	font-size: 2em;
+}
+
+.principal .caja-blanca .btn-big{
+	border-radius: 15px;
+	background-color: #E56385;
+	height: 45px;
+	line-height: 45px;
+}
+
+#juego{
+	background-image: url("../img/laberinto.jpg");
+	background-size:100% 100%;
+	padding: 40px 0;
+
+}
+
+#contenedorjuego{
+	margin: 0 auto;
+	background-image: url("../img/fondo3.jpg");
+	background-size:100% 100%;
+	width: 60%;
+	height: 450px;
+	padding: 10px;
+	position: relative;
+	border-radius: 20px;
+}
+
+#contenedorchico{
+	text-align: center;
+	margin: 0 auto;
+	width: 40%;
+}
+
+.h2-play{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	-webkit-animation-name:parpadeo;
+	     -webkit-animation-duration: 5s;
+	     -webkit-animation-timing-function: linear;
+	     -webkit-animation-iteration-count: infinite;
+    }
+    @keyframes parpadeo {  
+			      0% { opacity: 1.0; }
+			      50% { opacity: 0.0; }
+			      100% { opacity: 1.0; }
+			    }
+	  
+}
+.h2-play:first-letter{
+	font-size: 80px;
+	color: #901302;
+}
+
+.boton{
+	color: #0013FF;
+	padding: 3px;
+	display: block;
+	background: transparent;
+	margin: 7px;
+	border: none;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.boton:first-letter {
+color: #2AFF00; font-weight: bold;
+}
+
+
+.boton:hover {
+	border-radius: 5px;
+	box-shadow: 0 5px 5px #313131, 0 9px 0 #393939, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+	color: #fff !important;
+}
+
+#maps{
+	position: relative;
+	height: auto;
+	background-color: #EDE9E2;
+	padding: 40px;
+}
+#formulario{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	
+}
+a.block{
+	display: block;
+	border-radius: 15px;
+}
+
+ form a{
+	background: black;
+}
+.h2-play{
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	color: #A90202;
+	margin-top: 40px;
+	margin-bottom: 80px;
+}
+
+#instrucciones .h2-play{
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	color: #A90202;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+#instrucciones, #creditos {
+	padding: 0 60px;
+}
+
+#tablero i{
+	color: #75726C;
+}
+.fila{
+
+}
+.fila:before, .fila:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.taxi, .empty, .visitada{
+	box-sizing: border-box;
+	float: left;
+	width: 10%;
+	height: 80px;
+}
+.empty{	
+	background-color: #75726C;
+}
+
+.taxi{
+	background-color: #E56385;
+	background-image: url(../img/car.png);
+	background-size: contain;
+	background-position: center 6px ;
+	background-repeat: no-repeat; 
+}
+
+.visitada{
+	background-color: #E54E79;
+}
+
+.page-footer{
+	background-color: #A90202;
+	padding: 5px;
+}
+
+.tuerca{
+	width: 80px;
+	height: 80px;
+	background-image: url(../img/tuerca.png);
+	background-size: 100% 100%;
+	-webkit-animation-name:parpadeo;
+	     -webkit-animation-duration: 5s;
+	     -webkit-animation-timing-function: linear;
+	     -webkit-animation-iteration-count: infinite;
+    }
+    @keyframes parpadeo {  
+			      0% { opacity: 1.0; }
+			      50% { opacity: 0.0; }
+			      100% { opacity: 1.0; }
+			    }
+
+
+#uno{
+
+	position: absolute;
+	top: 20px;
+	left: 20px;
+
+
+}
+
+#dos{
+    position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+#tres{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+
+#cuatro{
+	position: absolute;
+	bottom:20px;
+	right:20px;
+}
+
+#mostrar_texto{
+	margin: 0 auto;
+	background: blue;
+	width: 50%;
+}
+
+
+.p{
+	display: inline-block;
+	float: left;
+}
+
+.pp{
+	display: inline-block;
+	float: right;
+}
+
+.oculto {
+	display: none;
+}
+
+
+/*Sección juego*/
+.negro{
+	background-image: url("../img/StoneP.jpg");
+	color: transparent;
+}
+
+.blanco{
+	color: transparent;
+}
+
+.final{
+	border-bottom: 3px solid red;
+	border-right: 3px solid red;
+	border-left: 3px solid red;
+	background-color: black;
+	color: transparent;
+}
+.inicio{
+	background-color: yellow;
+	color: yellow;
+}
+
+.imgf{
+	width: 35px;
+	height: 35px;
+}
+
+#tabla {
+	background-color: black;
+}
+
+#maps{
+	font-size: 1px;
+	margin: 0 auto;
+	background-color: #5A5959;
+	width: 95%;
+	height: 600px;
+	position: relative;
+	border-radius: 20px;
+}
+
+table {
+	margin: 0 auto;
+	width: 75%;
+    height: 40%;
+    display: table;
+    position: absolute;}
+
+td{
+	width: 12px;
+    height: 12px;
+    padding: 11px;
+}
+
+#redondo{
+	border: 0;
+    background: red;
+    position: absolute;
+    border-radius: 25px;
+    width: 12px;
+    height: 12px; 
+    padding: 0;
+}
+
+nav {
+	z-index: 4;
+	position: fixed;
+}
+
+.pasitos{
+	color: white;
+	text-align: center;
+}
+
+a{
+	background-color: black;
+}
+
+.small{
+	font-size: 20px;
+	color: white;
+}
+
+input{
+	color: #FFF000;
+}
